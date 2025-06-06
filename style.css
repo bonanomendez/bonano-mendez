@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  background: #0C0C0C;
+  font-family: 'Outfit', sans-serif;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+h1, h2, h3 {
+  font-family: 'Fraunces', serif;
+  margin: 0.5em 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 16px;
+}
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #0C0C0C 0%, #1a1a1a 100%);
+  text-align: center;
+  padding: 0 20px;
+}
+.hero-content {
+  max-width: 800px;
+  animation: fadeInUp 1s ease-out;
+}
+.logo {
+  font-size: 3.5rem;
+  letter-spacing: 0.15em;
+  color: #B0B0B0;
+}
+.tagline {
+  font-size: 1.6rem;
+  color: #fff;
+}
+.subheader {
+  color: #999;
+  margin: 1em 0;
+}
+.cta-button {
+  display: inline-block;
+  padding: 14px 32px;
+  border: 1px solid #B0B0B0;
+  border-radius: 8px;
+  background: transparent;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+.cta-button:hover {
+  background: #B0B0B0;
+  color: #0C0C0C;
+}
+.about {
+  background: #111;
+  padding: 100px 20px;
+}
+.about-inner {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+}
+.text-block {
+  flex: 1 1 50%;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+.image-block {
+  flex: 1 1 40%;
+}
+.vision {
+  background: #f7f7f7;
+  color: #0C0C0C;
+  padding: 100px 20px;
+  text-align: center;
+}
+.vision-subtext {
+  font-size: 1.2rem;
+  margin-top: 0.5em;
+}
+.pillars {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 60px;
+}
+.pillar {
+  background: #fff;
+  color: #0C0C0C;
+  padding: 30px;
+  border-radius: 12px;
+  width: 250px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+.contact {
+  padding: 100px 20px;
+  text-align: center;
+  background: #0C0C0C;
+}
+.contact form {
+  max-width: 500px;
+  margin: 40px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact input,
+.contact textarea {
+  background: #1a1a1a;
+  color: #fff;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+.contact button {
+  background: #B0B0B0;
+  color: #0C0C0C;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.contact button:hover {
+  background: #fff;
+}
+footer {
+  padding: 40px 20px;
+  text-align: center;
+  border-top: 1px solid #222;
+  background: #0C0C0C;
+  font-size: 0.9rem;
+  color: #666;
+}
+@keyframes fadeInUp {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+@media (max-width: 768px) {
+  .about-inner {
+    flex-direction: column;
+  }
+  .pillars {
+    flex-direction: column;
+    align-items: center;
+  }
+}
